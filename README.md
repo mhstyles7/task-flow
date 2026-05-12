@@ -235,6 +235,17 @@ task-flow/
 └── README.md
 ```
 
+## Development Note (AI Assistance)
+
+In accordance with the assignment guidelines, I would like to transparently disclose that AI coding assistants (such as GitHub Copilot / Cursor) were used during the development of this project. 
+
+The AI was utilized primarily for:
+- Scaffolding boilerplate code (e.g., standard Mongoose schemas, basic Express server setup)
+- Auto-completing repetitive CSS blocks and prop-types
+- Generating the initial structure for unit tests
+
+However, all architectural decisions, database schema designs, state management logic, RESTful API structures, and final debugging were actively directed, reviewed, and fully understood by me. I am fully prepared to explain and discuss every line of code in this repository during a technical interview.
+
 ---
 
 ## Submission
