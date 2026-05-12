@@ -57,10 +57,8 @@ function App() {
     completed: tasks.filter((t) => t.status === 'completed').length,
   };
 
-  // When not filtering, counts reflect all tasks
-  // When filtering, refetch to get real counts
   const displayCounts = filter
-    ? { all: '…', pending: '…', completed: '…', [filter]: tasks.length }
+    ? { all: '-', pending: '-', completed: '-', [filter]: tasks.length }
     : counts;
 
   return (
@@ -68,7 +66,10 @@ function App() {
       <header className="app-header">
         <div className="header-inner">
           <div className="logo">
-            <span className="logo-icon">✅</span>
+            <svg className="logo-icon" width="30" height="30" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="7" fill="#6366f1" />
+              <polyline points="8,17 13,22 24,11" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
             <span className="logo-text">Task<span className="logo-accent">Flow</span></span>
           </div>
           <p className="header-sub">Stay organised, stay productive.</p>
@@ -86,14 +87,14 @@ function App() {
 
           {globalError && (
             <div className="global-error" role="alert">
-              ⚠️ {globalError}
+              {globalError}
             </div>
           )}
 
           {loading ? (
             <div className="loading-state">
               <div className="spinner" />
-              <p>Loading tasks…</p>
+              <p>Loading tasks...</p>
             </div>
           ) : (
             <TaskList

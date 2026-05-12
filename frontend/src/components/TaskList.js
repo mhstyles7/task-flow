@@ -5,7 +5,7 @@ function TaskList({ tasks, onToggle, onDelete, onUpdate, filter }) {
   if (tasks.length === 0) {
     const messages = {
       '': 'No tasks yet. Add your first task above!',
-      pending: 'No pending tasks. Great job! 🎉',
+      pending: 'No pending tasks. Great job!',
       completed: 'No completed tasks yet. Keep going!',
     };
     return (

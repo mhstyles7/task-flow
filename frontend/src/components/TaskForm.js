@@ -40,7 +40,7 @@ function TaskForm({ onTaskCreated }) {
 
   return (
     <div className="task-form-card">
-      <h2 className="form-heading">➕ Add New Task</h2>
+      <h2 className="form-heading">Add New Task</h2>
       <form onSubmit={handleSubmit} noValidate>
         <div className="input-row">
           <input
@@ -63,13 +63,13 @@ function TaskForm({ onTaskCreated }) {
             {expanded ? '▲ Less' : '▼ More'}
           </button>
           <button type="submit" className="btn btn-primary" disabled={loading}>
-            {loading ? 'Adding…' : 'Add Task'}
+            {loading ? 'Adding...' : 'Add Task'}
           </button>
         </div>
 
         {error && (
           <p className="error-message" role="alert">
-            ⚠️ {error}
+            {error}
           </p>
         )}
 

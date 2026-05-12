@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 const PRIORITIES = ['low', 'medium', 'high'];
 
 const priorityColors = { low: '#22c55e', medium: '#f59e0b', high: '#ef4444' };
-const priorityEmoji = { low: '🟢', medium: '🟡', high: '🔴' };
 
 function isOverdue(due_date, status) {
   if (!due_date || status === 'completed') return false;
@@ -87,7 +86,7 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
               placeholder="Task title"
               autoFocus
             />
-            {editError && <p className="error-message">⚠️ {editError}</p>}
+            {editError && <p className="error-message">{editError}</p>}
             <textarea
               className="input-description"
               value={editDesc}
@@ -120,10 +119,10 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
             </div>
             <div className="edit-actions">
               <button className="btn btn-primary btn-sm" onClick={handleSave} disabled={saving}>
-                {saving ? 'Saving…' : '✓ Save'}
+                {saving ? 'Saving...' : 'Save'}
               </button>
               <button className="btn btn-ghost btn-sm" onClick={handleCancel}>
-                ✕ Cancel
+                Cancel
               </button>
             </div>
           </div>
@@ -137,19 +136,19 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
             )}
             <div className="task-meta">
               <span className="priority-badge" style={{ color: priorityColors[task.priority] }}>
-                {priorityEmoji[task.priority]} {task.priority}
+                {task.priority}
               </span>
               <span className="meta-date">
                 Created: {formatDate(task.created_at)}
               </span>
               {task.due_date && (
                 <span className={`meta-date ${overdue ? 'meta-date--overdue' : ''}`}>
-                  {overdue ? '⏰ Overdue: ' : '📅 Due: '}
+                  {overdue ? 'Overdue: ' : 'Due: '}
                   {formatDate(task.due_date)}
                 </span>
               )}
               <span className={`status-badge status-badge--${task.status}`}>
-                {completed ? '✓ Completed' : '○ Pending'}
+                {completed ? 'Completed' : 'Pending'}
               </span>
             </div>
           </>
@@ -165,7 +164,10 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
             aria-label="Edit task"
             title="Edit"
           >
-            ✏️
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
           </button>
           {showConfirm ? (
             <div className="confirm-delete">
@@ -180,7 +182,10 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
               aria-label="Delete task"
               title="Delete"
             >
-              🗑️
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
             </button>
           )}
         </div>
