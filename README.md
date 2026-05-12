@@ -2,6 +2,9 @@
 
 A full-stack personal task management application built with the MERN stack.
 
+**Live Demo**: https://task-flow-gray-zeta.vercel.app  
+**API**: https://task-flow-s4uk.onrender.com/api/health
+
 ---
 
 ## Tech Stack
@@ -237,5 +240,6 @@ task-flow/
 ## Submission
 
 - **GitHub**: https://github.com/mhstyles7/task-flow
-- **Live Demo**: _(URL if deployed)_
+- **Live Demo**: https://task-flow-gray-zeta.vercel.app
+- **API**: https://task-flow-s4uk.onrender.com
 - **Loom Walkthrough**: _(URL if recorded)_
