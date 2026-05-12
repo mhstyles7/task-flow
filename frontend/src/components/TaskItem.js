@@ -64,7 +64,6 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
 
   return (
     <div className={`task-card ${completed ? 'task-card--completed' : ''} ${overdue ? 'task-card--overdue' : ''}`}>
-      {/* Left: checkbox */}
       <div className="task-check">
         <input
           type="checkbox"
@@ -75,7 +74,6 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
         />
       </div>
 
-      {/* Middle: content */}
       <div className="task-body">
         {editing ? (
           <div className="edit-form">
@@ -155,7 +153,6 @@ function TaskItem({ task, onToggle, onDelete, onUpdate }) {
         )}
       </div>
 
-      {/* Right: action buttons */}
       {!editing && (
         <div className="task-actions">
           <button

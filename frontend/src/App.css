@@ -1,7 +1,4 @@
-/* =============================================
-   TASK-FLOW — Custom CSS (no framework)
-   ============================================= */
-
+/* App.css — Task-Flow styles */
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
