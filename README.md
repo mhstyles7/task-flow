@@ -1,6 +1,6 @@
-# ✅ Task-Flow — Personal Task Manager
+# ✅ Task-Flow — Personal Task Manager (MERN Stack)
 
-A full-stack personal task management web application built with **React**, **Express**, and **MongoDB**.
+A full-stack personal task management web application built with the **MERN stack** — **M**ongoDB, **E**xpress, **R**eact, **N**ode.js.
 
 > Built as part of the Acme AI Fellowship Programme C7 Technical Assessment.
 
@@ -15,12 +15,13 @@ A full-stack personal task management web application built with **React**, **Ex
 
 ## 🛠 Tech Stack
 
-| Layer    | Technology                        |
-|----------|-----------------------------------|
-| Frontend | React 18, custom CSS (no framework) |
-| Backend  | Node.js, Express 4                |
-| Database | MongoDB (Mongoose ODM)            |
-| Testing  | Jest, Supertest                   |
+| Layer    | Technology                          |
+|----------|-------------------------------------|
+| **M** — Database | MongoDB Atlas (Mongoose ODM)  |
+| **E** — Backend  | Express 4 (REST API)          |
+| **R** — Frontend | React 18, custom CSS (no framework) |
+| **N** — Runtime  | Node.js v20                   |
+| Testing  | Jest, Supertest                     |
 
 ---
 
@@ -275,6 +276,6 @@ This project was built with the assistance of Claude (Anthropic) as a coding aid
 
 ## 📬 Submission
 
-- **GitHub Repository**: https://github.com/YOUR_USERNAME/task-flow
+- **GitHub Repository**: https://github.com/mhstyles7/task-flow
 - **Live Demo**: _(URL if deployed)_
 - **Loom Walkthrough**: _(URL if recorded)_
