@@ -237,7 +237,11 @@ task-flow/
 
 ## Development Note (AI Assistance)
 
+<<<<<<< HEAD
 In accordance with the assignment guidelines, I would like to transparently disclose that AI coding assistants (such as GitHub Copilot) were used during the development of this project. 
+=======
+In accordance with the assignment guidelines, I would like to transparently disclose that AI coding assistants (GitHub Copilot) were used during the development of this project. 
+>>>>>>> 4e4a4e9a044cf8dd87659a6b7a0c9f5c3c41ec2b
 
 The AI was utilized primarily for:
 - Scaffolding boilerplate code (e.g., standard Mongoose schemas, basic Express server setup)
@@ -253,4 +257,9 @@ However, all architectural decisions, database schema designs, state management 
 - **GitHub**: https://github.com/mhstyles7/task-flow
 - **Live Demo**: https://task-flow-gray-zeta.vercel.app
 - **API**: https://task-flow-s4uk.onrender.com
+<<<<<<< HEAD
 - **Loom Walkthrough**: https://drive.google.com/file/d/1rnVgiTOozrrEOFitDkDiFdypGMkRz08m/view?usp=drive_link
+=======
+- **Loom Walkthrough**:https://drive.google.com/file/d/1rnVgiTOozrrEOFitDkDiFdypGMkRz08m/view?usp=drive_link
+- 
+>>>>>>> 4e4a4e9a044cf8dd87659a6b7a0c9f5c3c41ec2b
